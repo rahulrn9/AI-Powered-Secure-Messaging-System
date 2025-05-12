@@ -1,0 +1,53 @@
+# AI-Powered Secure Messaging System
+
+A proof-of-concept platform demonstrating a suite of advanced secure-messaging features, including:
+
+- **Dynamic Encryption** (AES-CBC with machine-learning–tuned key strength & rotation)  
+- **Biometric Authentication** (stub for WebAuthn / mobile biometrics)  
+- **AI-Powered Anomaly Detection** (Isolation Forest)  
+- **Quantum-Resistant & QKD Simulation**  
+- **Zero-Knowledge Proofs**  
+- **Threat Intelligence Integration**  
+- **Steganography & Offline USB Messaging**  
+- **Decentralized P2P Networking** (libp2p)  
+- **Distributed Ledger Audit** (simple blockchain stub)  
+- **Geo-Location Restrictions & Contextual Suggestions**  
+- **Privacy Modes, Honeypot, Behavioral Biometrics, Risk Scoring**  
+
+---
+
+## 🔧 Prerequisites
+
+- **Node.js** ≥ v18  
+- **Python** ≥ 3.8  
+- **Docker & Docker Compose** (optional, for containerization)  
+- **Hugging Face API Token** with “inference” scope (for zero-shot NLP)
+
+---
+
+## 🚀 Quick Start (Local)
+
+1. **Clone the repository**  
+   ```bash
+   git clone <your-repo-url>
+   cd AI_Secure_Messaging_System_complete
+Install Node.js dependencies
+
+bash
+npm install
+pip install --upgrade \
+scikit-learn flask boto3 pillow pycryptodome pytest
+# PowerShell
+$Env:HF_API_TOKEN = "<your_hf_inference_token>"
+
+# bash / zsh
+export HF_API_TOKEN="<your_hf_inference_token>"
+python run_all.py
+Build Docker images/
+docker-compose build
+Launch services (detached)/
+docker-compose up -d
+View logs/
+docker-compose logs -f
+Shutdown/
+docker-compose down
