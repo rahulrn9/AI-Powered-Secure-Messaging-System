@@ -1,0 +1,19 @@
+
+{"type": "module",
+ "scripts": {
+ "start:p2p": "node src/p2p/p2p_network.cjs",
+  "start:p2p": "node src/p2p/p2p_network.mjs",
+  "test":      "jest"
+},
+"dependencies": {
+  "libp2p":      "^2.0.0",
+  "@libp2p/tcp": "^0.18.0",
+  "node-fetch":  "^3.0.0"
+},
+
+  "devDependencies": {
+    "jest":  "^29.0.0"
+  }
+}
+  
+

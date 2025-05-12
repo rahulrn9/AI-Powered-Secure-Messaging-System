@@ -1,0 +1,9 @@
+version:'3.8'
+services:
+  python-service:
+    build: { context:., dockerfile:Dockerfile.python }
+    volumes: ['src:/app/src:ro']
+    ports:['8888:8888']
+  node-service:
+    build: { context:., dockerfile:Dockerfile.node }
+    volumes: ['src:/app/src:ro']

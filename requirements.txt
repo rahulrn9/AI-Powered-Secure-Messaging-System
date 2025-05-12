@@ -1,0 +1,5 @@
+scikit-learn
+flask
+boto3
+pillow
+pycryptodome
